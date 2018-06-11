@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Mundomosa</string>
+    <string name="logo_description">Mundomosa Logo</string>
+    <string name="username_email_hint">Username / Email</string>
+    <string name="username_email_description">Your Username or email address for logging in</string>
+    <string name="password_hint">Password</string>
+    <string name="button_login">Login</string>
+    <string name="error_enter_usrname_pass">Please enter username and password</string>
 </resources>
