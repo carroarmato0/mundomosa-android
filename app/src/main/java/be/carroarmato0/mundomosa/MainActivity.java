@@ -10,6 +10,8 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
+    private static final String TAG = "Mediamosa";
+
     Button btn_login;
 
     @Override
@@ -18,7 +20,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         //setContentView(R.layout.activity_main);
         setContentView(R.layout.view_login);
 
-        Log.d("Mediamosa", "onCreate called");
+        Log.d(TAG, "onCreate called");
 
         btn_login = findViewById(R.id.btn_login);
         btn_login.setOnClickListener(this);
@@ -28,28 +30,28 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onStart() {
         super.onStart();
 
-        Log.d("Mediamosa", "onStart called");
+        Log.d(TAG, "onStart called");
     }
 
     @Override
     protected void onResume() {
         super.onResume();
 
-        Log.d("Mediamosa", "onResume called");
+        Log.d(TAG, "onResume called");
     }
 
     @Override
     protected void onPause() {
         super.onPause();
 
-        Log.d("Mediamosa", "onPause called");
+        Log.d(TAG, "onPause called");
     }
 
     @Override
     protected void onStop() {
         super.onStop();
 
-        Log.d("Mediamosa", "onStop called");
+        Log.d(TAG, "onStop called");
 
     }
 
@@ -57,14 +59,14 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onDestroy() {
         super.onDestroy();
 
-        Log.d("Mediamosa", "onDestroy called");
+        Log.d(TAG, "onDestroy called");
     }
 
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.btn_login:
-                Log.d("Mediamosa", "Login button clicked");
+                Log.d(TAG, "Login button clicked");
 
                 if (validateLoginButton()) {
                     setContentView(R.layout.activity_main);
